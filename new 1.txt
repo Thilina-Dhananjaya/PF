@@ -1,0 +1,30 @@
+pwd – Present Working Directory
+
+ls – List the Directory Content (files / directories)
+		1. ls –l – Long Format
+		2. ls –a – Show hidden files
+		3. ls –lS – Sort by size
+		
+cd –- Change Directory
+
+cat > [filea_name] -- Creating a File
+
+cat [file_name] --  Displaying the File Contents
+
+mkdir [directory_name] -- create directory
+rmdir [directory_name] -- remove directory
+
+rm –r dir1  -- Delete all (directories + files) inside dir1
+
+cp file1.txt file2.txt  --  Copy file -> file
+
+mv file1.txt file2.txt  -- move a file
+
+cat file1.txt  --  read data in a file
+
+touch file1.txt  -- create/over write
+
+nano file1.txt  -- edit text file (Ctrl + o to save)
+
+top -- running system(task Manager) 
+
