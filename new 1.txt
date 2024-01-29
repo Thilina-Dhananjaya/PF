@@ -1,0 +1,132 @@
+pwd – Present Working Directory
+
+ls – List the Directory Content (files / directories)
+		1. ls –l – Long Format
+		2. ls –a – Show hidden files
+		3. ls –lS – Sort by size
+		
+cd –- Change Directory
+
+cat > [filea_name] -- Creating a File
+
+cat [file_name] --  Displaying the File Contents
+
+mkdir [directory_name] -- create directory
+rmdir [directory_name] -- remove directory
+
+rm –r dir1  -- Delete all (directories + files) inside dir1
+
+cp file1.txt file2.txt  --  Copy file -> file
+
+mv file1.txt file2.txt  -- move a file
+
+cat file1.txt  --  read data in a file
+
+touch file1.txt  -- create/over write
+
+nano file1.txt  -- edit text file (Ctrl + o to save)
+
+top -- running system(task Manager) 
+
+chmod -r
+
+uname --Displays Linux system information
+uname -r --Displays kernel release information
+uptime --Displays how long the system has been running including load average
+hostname --Shows the system hostname
+hostname -i --Displays the IP address of the system
+last reboot --Shows system reboot history
+date --Displays current system date and time
+timedatectl --Query and change the System clock
+cal --Displays the current calendar month and day
+w --Displays currently logged in users in the system
+whoami --Displays who you are logged in as
+finger --username Displays information about the user
+dmesg Displays bootup messages
+
+lshw --Displays information about system's hardware configuration
+lsblk --Displays block devices related information
+free -m
+--Displays free and used memory in the system (-m flag indicates 
+memory in MB)
+lspci -tv --Displays PCI devices in a tree-like diagram
+lsusb -tv --Displays USB devices in a tree-like diagram
+dmidecode --Displays hardware information from the BIOS
+hdparm -i /dev/xda --Displays information about disk data
+hdparm -tT /dev/xda <:code> --Conducts a read speed test on device xda
+badblocks -s /dev/xda --Tests for unreadable blocks on dis
+
+id --Displays the details of the active user e.g. uid, gid, and groups
+last --Shows the last logins in the system
+who --Shows who is logged in to the system
+groupadd --"admin" Adds the group 'admin'
+adduser "Sam" --Adds user Sam
+userdel "Sam" --Deletes user Sam
+usermod --Used for changing / modifying user information
+
+
+ls -al Lists files - both regular & hidden files and their permissions as well.
+pwd Displays the current directory file path
+mkdir 'directory_name' Creates a new directory
+rm file_name Removes a file
+rm -f filename Forcefully removes a file
+rm -r directory_name Removes a directory recursively
+rm -rf directory_name Removes a directory forcefully and recursively
+cp file1 file2 Copies the contents of file1 to file2
+cp -r dir1 dir2 Recursively Copies dir1 to dir2. dir2 is created if it does not exist
+mv file1 file2 Renames file1 to file2
+ln -s 
+/path/to/file_name link
+_name
+Creates a symbolic link to file_name
+touch file_name Creates a new file
+cat > file_name Places standard input into a file
+more file_name Outputs the contents of a file
+head file_name Displays the first 10 lines of a file
+tail file_name Displays the last 10 lines of a file
+gpg -c file_name Encrypts a file
+gpg file_name.gpg Decrypts a file
+wc Prints the number of bytes, words and lines in a file
+xargs Executes commands from standard input
+
+ps Display currently active processes
+ps aux | grep 'telnet' Searches for the id of the process 'telnet'
+pmap Displays memory map of processes
+top Displays all running processes
+kill pid Terminates process with a given pid
+killall proc Kills / Terminates all processes named proc
+pkill process-name Sends a signal to a process with its name
+bg Resumes suspended jobs in the background
+fg Brings suspended jobs to the foreground
+fg n job n to the foreground
+lsof Lists files that are open by processes
+renice 19 PID makes a process run with very low priority
+pgrep firefox find Firefox process ID
+pstree visualizing processes in tree mode
+
+chmod octal filename Change file permissions of the file to octal
+Example
+chmod 777 /data/test.c Set rwx permissions to owner, group and everyone 
+(everyone else who has access to the server)
+chmod 755 /data/test.c Set rwx to the owner and r_x to group and everyone
+chmod 766 /data/test.c Sets rwx for owner, rw for group and everyone
+chown owner user-file Change ownership of the file
+chown owner-user:owner-group 
+file_name Change owner and group owner of the file
+chown owner-user:owner-group 
+directory Change owner and group owner of the directory
+
+
+ip addr show Displays IP addresses and all the network interfaces
+ip address add 192.168.0.1/24 
+dev eth0 Assigns IP address 192.168.0.1 to interface eth0
+ifconfig Displays IP addresses of all network interfaces
+ping host ping command sends an ICMP echo request to establish a 
+connection to server / PC
+whois domain Retrieves more information about a domain name
+dig domain Retrieves DNS information about the domain
+dig -x host Performs reverse lookup on a domain
+host google.com Performs an IP lookup for the domain name
+hostname -i Displays local IP address
+wget file_name Downloads a file from an online source
+netstat -pnltu Displays all active listening ports
